@@ -19,14 +19,12 @@ Since the inception of the RFC process modern tools (hi git!) have made it possi
 
 Many software changes, including bug fixes and documentation improvements can be implemented and reviewed via the normal git pull request workflow without ever touching this process. However, we do ask that bigger requests and ideas follow a bit of formality, especially when you are thinking about changes that impact other engineers elsewhere in the company. By creating an RFC, you're guaranteed that impacted folks have an adequate heads-up on the changes.
 
-Some changes though are "substantial", and we ask that these be put through a bit of a design process and produce a consensus among the engineering team. The "RFC" (request for comments) process is intended to provide a consistent and controlled path for new infrastructure to enter into the company, so that all stakeholders can be confident about the direction the language is evolving in.
-
 Please refer to [RFC1](https://github.com/LeadSV/rfc/blob/master/text/0001-using_rfcs.md) "Using RFCs" for a detailed explanation of why RFCs are important and how to contribute your own RFC to this series.
 
 # The Process
 * Fork this repository so that you have a copy
 * Copy the template file: `cp 0000-template.md text/0000-my_feature.md`
-* Fill in the RFC. Put thought into the sections, but remember that **timely is more important than peftect**
+* Fill in the RFC. Put thought into the sections, but remember that **timely is more important than perfect**
 * Submit a pull request. Be prepared to revise it as folks weigh in.
 * Help drive consensus on the RFC. Work to understand concerns.
 * Be willing to update the RFC as yours (and the company's) understanding evolves
@@ -38,9 +36,9 @@ RFC approval means that the RFC will be assigned an ID and added to the series. 
 * You have informed the domain owner that you do not which for the RFC to be published
 * The RFC is not complete, making consensus difficult
 
-If the RFC is not approved for publication, the domain owner responsible for editing RFCs will provide clear and detailed feedback regarding why the RFC wasn't published.
+If the RFC is not approved for publication, the domain owner responsible for editing RFCs will provide clear and detailed feedback regarding why the RFC wasn't published. Your RFC will continue to exist in the code review history and available in searches.
 
-A published RFC ensures that other teams are made aware of the proposal and intended implementation.
+A published RFC ensures that other teams are made aware of the document.
 
 Modifications to "active" RFCs can be done in follow-up pull requests. We strive to write each RFC that refers to architecture in a manner that it will reflect the final design; but the nature of the process means that we cannot expect every merged RFC to actually reflect what the end result will be at the time of release.
 

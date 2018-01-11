@@ -1,7 +1,11 @@
-* Name: `using_rfcs`
-* Start Date: 9/3/2017
-* RFC PR: 0
-* Issue ID: null
+---
+RFC: 1
+Title: Using RFCs
+Start: 9/3/2017
+PR: 0
+---
+
+# Using RFCs
 
 # Summary
 This is a proposal to use RFCs in engineering. The "Request for Comments" system is used by several successful open source groups, and provides a framework for managing complex change and its documentation. Not everything needs an RFC, but since this can slow a company down, the proposal itself deserves an RFC to explain the rationale and reasoning.

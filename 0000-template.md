@@ -1,9 +1,13 @@
-* Name: TODO
-* Start Date: TODO
-* RFC PR: <blank>
-* Issue ID: <blank>
+---
+RFC: <blank>
+Title: TODO_TITLE
+Start: TODO_START
+PR: <blank>
+---
 
-*SEE `README.md` for how to submit a new RFC, and `0000-using_rfcs.md` for why we are using an RFC process. Delete this line when done.*
+# TODO_TITLE
+
+*SEE `README.md` for how to submit a new RFC, and `0001-using_rfcs.md` for why we are using an RFC process. Delete this line when done.*
 
 # Summary
 This is a one paragraph explanation of the issue and the proposal.

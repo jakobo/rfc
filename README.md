@@ -24,6 +24,7 @@ Please refer to [RFC1](https://github.com/LeadSV/rfc/blob/master/text/0001-using
 # The Process
 * Fork this repository so that you have a copy
 * Copy the template file: `cp 0000-template.md text/0000-my_feature.md`
+* `Are You an Open Source Project?` then don't forget to ask RFCs to contain a license (they'll often contain code, after all)
 * Fill in the RFC. Put thought into the sections, but remember that **timely is more important than perfect**
 * Submit a pull request. Be prepared to revise it as folks weigh in.
 * Help drive consensus on the RFC. Work to understand concerns.

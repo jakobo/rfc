@@ -33,8 +33,8 @@ Please refer to [RFC1](https://github.com/LeadSV/rfc/blob/master/text/0001-using
 
 # What An Approved RFC Means
 RFC approval means that the RFC will be assigned an ID and added to the series. RFCs may not be added to the series for reasons such as:
-* There is not clear consensus, and we are concerned the publication would be seen as authoritative
-* You have informed the domain owner that you do not which for the RFC to be published
+* There is no clear consensus, and we are concerned the publication would be seen as authoritative
+* You have informed the domain owner that you do not wish for the RFC to be published
 * The RFC is not complete, making consensus difficult
 
 If the RFC is not approved for publication, the domain owner responsible for editing RFCs will provide clear and detailed feedback regarding why the RFC wasn't published. Your RFC will continue to exist in the code review history and available in searches.

@@ -50,6 +50,8 @@ If an RFC is not chosen for distribution, clear explanations will be provided by
 * The RFC pull request contains a single file change that is the `0000-my_feature_name.md` file
 * The RFC file contains the following sections: Summary, Motivation, Guide, Reference Implementation, Drawbacks, Alternatives
 
+> **Open Question:** Should we include a diagram session?
+
 # Drawbacks
 **Time:** A common cited problem for an RFC process is the time investment asked of every participating engineer. This is in error, as the time required to create an RFC is ultimately spent in several other ways stemming from a lack of consensus or documentation. A proposal for an RFC has the highest ROI at the beginning of the process, not the end. In situations where there is already substantial buy-in from domain owners, the RFC is a lightweight process of recording what was already agreed upon. In situations where there is disagreement, then this time spent in the RFC process becomes time well spent.
 

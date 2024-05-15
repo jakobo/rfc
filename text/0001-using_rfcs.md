@@ -26,7 +26,8 @@ Creating a new RFC should be something you start as soon as it feels like the wo
 ## Getting Feedback Pre-Pull Request
 The beauty of git is that you can have your RFC in your own local branch, at an accessible URL, which you can share to other individuals to get feedback. While we won't be prescriptive on who you should be reaching out to at this stage, testing your ideas and assumptions with several senior engineers can help work out any large issues. If you don't have great solutions yet, that's okay! Just mark the areas as still open and needing input. Also, feel free to create this RFC in WEX IT RFC Confluence Space. 
 
-> **Open Question:** What is going to be the suggested communication process? For example: the creator should review the RFC with its peers before submitting a Pull request. Then submit it to a broader action.
+> **Open Question:** What is going to be the suggested communication process? For example: the creator should review the RFC with its peers before submitting a Pull request. Then submit it to a broader audience.
+
 > **Open Question:** How RFC would be shared when created? Are we going to have a community or something that will receive all RFCs?Or the communication would be organic?
 
 ## The Pull Request

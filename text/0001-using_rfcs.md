@@ -1,7 +1,7 @@
 ---
 RFC: 1
 Title: Using RFCs
-Start: 9/3/2017
+Start: 5/15/2024
 PR: 0
 ---
 
@@ -13,7 +13,9 @@ This is a proposal to use RFCs in engineering. The "Request for Comments" system
 # Motivation
 Larger changes, while still reversible, require some amount of documentation as to why the decisions were made and the technical climate at the time the idea was proposed. Historically, these live in wikis or alternative documentation systems. These locations are either difficult to search, too far removed from the code, or are rarely seen as a source of truth.
 
-This solution proposes a documentation system that lives in code, uses plain text for authoring, and takes advantage of existing git collaboration tools in order to edit, maintain, and build consensus on code ideas that impact all of engineering. It is based on the RFC process as designed by the IETF and later adapted for open source projects.
+This solution proposes a documentation system that lives in code, uses plain text for authoring, and takes advantage of existing git collaboration tools in order to edit, maintain, and build consensus on code ideas that impact all of engineering. It is based on the RFC process as designed by the IETF and later adapted for open source projects. For the feedback and comment part this RFC will also be added to Confluence and its comments will be added as comments here.
+
+> **Open Question:** Who can is going to be responsible for importing the comments from Confluence as Pull Requests to the RFC git Repo?
 
 # Guide Implementation
 To make sure you've hit on all major parts of an RFC, this RFC can serve as a reference model.
@@ -22,25 +24,25 @@ To make sure you've hit on all major parts of an RFC, this RFC can serve as a re
 Creating a new RFC should be something you start as soon as it feels like the work is substantial and worth getting additional opinions on. You can start an RFC by forking this repository and copying the template file to a new file in the `text/` directory: `cp 0000-template.md text/0000-my_feature_name.md`, replacing `my_feature_name` with a shortened name for your feature or proposal. You'll be given a simple markdown document, for which you can edit the sections and start your proposal.
 
 ## Getting Feedback Pre-Pull Request
-The beauty of git is that you can have your RFC in your own local branch, at an accessible URL, which you can share to other individuals to get feedback. While we won't be prescriptive on who you should be reaching out to at this stage, testing your ideas and assumptions with several senior engineers can help work out any large issues. If you don't have great solutions yet, that's okay! Just mark the areas as still open and needing input.
+The beauty of git is that you can have your RFC in your own local branch, at an accessible URL, which you can share to other individuals to get feedback. While we won't be prescriptive on who you should be reaching out to at this stage, testing your ideas and assumptions with several senior engineers can help work out any large issues. If you don't have great solutions yet, that's okay! Just mark the areas as still open and needing input. Also, feel free to create this RFC in WEX IT RFC Confluence Space. 
 
 ## The Pull Request
-When you feel you're ready to get more feedback beyond your immediate peers, it's time to make a pull request. Most git tools have a way to submit a pull request to the upstream repository. [For example, here's GitHub's instructions](https://help.github.com/articles/creating-a-pull-request/), and [here is GitLab's process](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html). With a formal pull request, folks can comment on the pull request, suggest changes, and have discussions about the issue all in your company's code management tool of choice. More importantly, all of these discussions are captured and will live on in the pull request's history.
+When you feel you're ready to get more feedback beyond your immediate peers, it's time to make a pull request. Most git tools have a way to submit a pull request to the upstream repository. [For example, here's GitHub's instructions](https://help.github.com/articles/creating-a-pull-request/). With a formal pull request, folks can comment on the pull request, suggest changes, and have discussions about the issue. More importantly, all of these discussions are captured and will live on in the pull request's history.
 
 ## Manage Feedback
 As more eyes look at your RFC, they'll have their own valuable thoughts and opinions to share. As the creator of the RFC, it's generally good to address feedback and if necessary, make changes to the RFC. If you have a meeting in which the RFC is discussed, be sure to capture the notes and share them in the RFC's pull request as a comment. After some amount of time, the folks closest to the domain at the company will ask that all final comments are submitted.
 
 ## Final Feedback
-To avoid discussion going in circles forever, an owner in the domain related to your RFC will ask for "final comments". At that point, the discussion will wrap up, and the group accountable for the domain related to your RFC will determine if this RFC proposal needs to be widely distributed. If distribution of the RFC is decided, the pull request will be accepted and the RFC given a numeric ID. If a RFC was not chosen to be distributed, that request and the RFC document continue to exist in your collaborative repository's ticket system, capturing the rationale and explanation.
+To avoid discussion going in circles forever, an owner in the domain related to your RFC will ask for "final comments". At that point, the discussion will wrap up, and the group accountable for the domain related to your RFC will determine if this RFC proposal needs to be widely distributed. If distribution of the RFC is decided, the pull request will be accepted and the RFC given a numeric ID. If a RFC was not chosen to be distributed, that request and the RFC document continue to exist in your collaborative repository's ticket system and in WEX IT RFC Confluence Space, capturing the rationale and explanation.
 
-> **Open Question:** Who can declare that an RFC is entering its Final Feedback phase? This can be a senior engineer, a scrum master, or other individual passionate about the process. They don't have to be a voting member for the RFC, just a facilitator.
+> **Open Question:** Who can declare that an RFC is entering its Final Feedback phase?
 
-> **Open Question:** What is the decision process in your company for resolving an RFC? It could be a meeting or an up/down vote by N individuals in your company. Whatever you decide, it should be consistent.
+> **Open Question:** What is the decision process in your company for resolving an RFC? It could be a meeting or an up/down vote by N individuals in your company.
 
 ## Adoption
 When an RFC is chosen for distribution, it will be given a numeric ID corresponding with the next sequence in the `/text` directory (This is why your file was `0000-my_feature_name` originally). While this does not guarantee the opinion is widely adopted, it does ensure that it has the support of the individuals accountable for the domain relevant to the RFC.
 
-If an RFC is not chosen for distribution, clear explanations will be provided by the domain owner and the pull request closed. This does not prevent the implementation of the idea, but the decision on an RFC carries significant weight. Remember, RFCs exist to inform and share information and intent.
+If an RFC is not chosen for distribution, clear explanations will be provided by the domain owner and the pull request closed. This does not prevent the implementation of the idea, but the decision on an RFC carries significant weight. Remember, RFCs exist to inform and share information and intent. Also, it should be included in WEX IT RFC Confluence Space under the archived session.
 
 # Reference Implementation
 `0000-template.md` contains the minimum template needed for an effective RFC process. An RFC pull request document must meet the folowing criteria:
@@ -54,6 +56,8 @@ If an RFC is not chosen for distribution, clear explanations will be provided by
 **Time:** A common cited problem for an RFC process is the time investment asked of every participating engineer. This is in error, as the time required to create an RFC is ultimately spent in several other ways stemming from a lack of consensus or documentation. A proposal for an RFC has the highest ROI at the beginning of the process, not the end. In situations where there is already substantial buy-in from domain owners, the RFC is a lightweight process of recording what was already agreed upon. In situations where there is disagreement, then this time spent in the RFC process becomes time well spent.
 
 **Owners:** Ownership is something difficult for engineering organizations to talk about. It requires the engineering organization to agree outright that one or more individuals are operating in the best interest of a domain and will invest the time ensuring their domain remains well maintained. However, these owners already exist; they are the folks engineers turn to with questions. To offset the obligation of being an owner, ownership can be added to an individuals engineering expectations and factored into any leverage / impact criteria for their role.
+
+> **Open Question:** Who is going to be the RFC Owner?
 
 # Rationale / Alternatives
 ## Decision Bodies

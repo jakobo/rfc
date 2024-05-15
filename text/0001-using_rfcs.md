@@ -37,7 +37,7 @@ To avoid discussion going in circles forever, an owner in the domain related to 
 
 > **Open Question:** Who can declare that an RFC is entering its Final Feedback phase?
 
-> **Open Question:** What is the decision process in your company for resolving an RFC? It could be a meeting or an up/down vote by N individuals in your company.
+> **Open Question:** What is the decision process going to be for resolving an RFC? It could be a meeting or an up/down vote by N individuals in the company.
 
 ## Adoption
 When an RFC is chosen for distribution, it will be given a numeric ID corresponding with the next sequence in the `/text` directory (This is why your file was `0000-my_feature_name` originally). While this does not guarantee the opinion is widely adopted, it does ensure that it has the support of the individuals accountable for the domain relevant to the RFC.
@@ -49,8 +49,6 @@ If an RFC is not chosen for distribution, clear explanations will be provided by
 * Adds to `text/` with a filename `0000-my_feature_name.md` where `my_feature_name` maps to the feature name in the header of the RFC
 * The RFC pull request contains a single file change that is the `0000-my_feature_name.md` file
 * The RFC file contains the following sections: Summary, Motivation, Guide, Reference Implementation, Drawbacks, Alternatives
-
-> **Open Question:** You will need to expand the reference implementation with specific git commands you want used, especially if your company has a process around rebasing / merging upstream.
 
 # Drawbacks
 **Time:** A common cited problem for an RFC process is the time investment asked of every participating engineer. This is in error, as the time required to create an RFC is ultimately spent in several other ways stemming from a lack of consensus or documentation. A proposal for an RFC has the highest ROI at the beginning of the process, not the end. In situations where there is already substantial buy-in from domain owners, the RFC is a lightweight process of recording what was already agreed upon. In situations where there is disagreement, then this time spent in the RFC process becomes time well spent.

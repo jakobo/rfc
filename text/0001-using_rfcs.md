@@ -15,7 +15,7 @@ Larger changes, while still reversible, require some amount of documentation as 
 
 This solution proposes a documentation system that lives in code, uses plain text for authoring, and takes advantage of existing git collaboration tools in order to edit, maintain, and build consensus on code ideas that impact all of engineering. It is based on the RFC process as designed by the IETF and later adapted for open source projects. For the feedback and comment part this RFC will also be added to Confluence and its comments will be added as comments here.
 
-> **Open Question:** Who can is going to be responsible for importing the comments from Confluence as Pull Requests to the RFC git Repo?
+> **Open Question:** Who is going to be responsible for importing the comments from Confluence as Pull Requests to the RFC git Repo?
 
 # Guide Implementation
 To make sure you've hit on all major parts of an RFC, this RFC can serve as a reference model.

@@ -13,7 +13,7 @@ jobs:
         uses: markdown-confluence/publish-action@v5
             
         with:
-          confluenceBaseUrl: https://wexinc.atlassian.net/wiki/spaces/PTA
+          confluenceBaseUrl: https://wexinc.atlassian.net/
           confluenceParentId: 154306543875
           atlassianUserName: ${{ secrets.ATLASSIAN_USERNAME }}
           atlassianApiToken: ${{ secrets.ATLASSIAN_API_TOKEN }}

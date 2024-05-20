@@ -12,7 +12,7 @@ jobs:
         uses: markdown-confluence/publish-action@v5
             
         with:
-          confluenceBaseUrl: https://wexinc.atlassian.net/wiki/
+          confluenceBaseUrl: https://wexinc.atlassian.net/wiki/spaces/~712020f93207a80b2f4d3e88e86eaf0d4ef6d2
           confluenceParentId: 154382991740
           atlassianUserName: ${{ secrets.ATLASSIAN_USERNAME }}
           atlassianApiToken: ${{ secrets.ATLASSIAN_API_TOKEN }}

@@ -21,10 +21,13 @@ This solution proposes a documentation system that lives in code, uses plain tex
 To make sure you've hit on all major parts of an RFC, this RFC can serve as a reference model.
 
 ## Creating a new RFC
-Creating a new RFC should be something you start as soon as it feels like the work is substantial and worth getting additional opinions on. You can start an RFC by forking this repository and copying the template file to a new file in the `text/` directory: `cp 0000-template.md text/0000-my_feature_name.md`, replacing `my_feature_name` with a shortened name for your feature or proposal. You'll be given a simple markdown document, for which you can edit the sections and start your proposal.
+Creating a new RFC should be something you start as soon as it feels like the work is substantial and worth getting additional opinions on. You can start an RFC by creating a branch in this repository and copying the template file to a new file in the `text/` directory: `cp 0000-template.md text/0000-my_feature_name.md`, replacing `my_feature_name` with a shortened name for your feature or proposal. You'll be given a simple markdown document, for which you can edit the sections and start your proposal. 
 
-## Getting Feedback Pre-Pull Request
-The beauty of git is that you can have your RFC in your own local branch, at an accessible URL, which you can share to other individuals to get feedback. While we won't be prescriptive on who you should be reaching out to at this stage, testing your ideas and assumptions with several senior engineers can help work out any large issues. If you don't have great solutions yet, that's okay! Just mark the areas as still open and needing input. Also, feel free to create this RFC in WEX IT RFC Confluence Space. 
+## Confluence integration
+This repo uses a github action workflow to automatically publish your RFC file to Confluence. Once you commit the changes to your local branch, a confluence page will be created with you RFC and the process could be started.
+
+## Getting Feedback
+The beauty of having the Confluence integratios is that you can have your RFC in your own local branch, at an accessible URL, which you can share to other individuals to get feedback. While we won't be prescriptive on who you should be reaching out to at this stage, testing your ideas and assumptions with several senior engineers can help work out any large issues. If you don't have great solutions yet, that's okay! Just mark the areas as still open and needing input. 
 
 > **Open Question:** What is going to be the suggested communication process? For example: the creator should review the RFC with its peers before submitting a Pull request. Then submit it to a broader audience.
 

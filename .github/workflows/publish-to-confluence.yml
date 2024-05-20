@@ -8,8 +8,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       
-      - name: Publish Markdown to Confluence
-        uses: markdown-confluence/publish@v5
+      - name: markdown-confluence
+        uses: markdown-confluence/publish-action@v5
+            
         with:
           confluenceBaseUrl: https://wexinc.atlassian.net/wiki/
           confluenceParentId: 154382991740

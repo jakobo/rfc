@@ -14,7 +14,7 @@ jobs:
             
         with:
           confluenceBaseUrl: https://wexinc.atlassian.net/
-          confluenceParentId: 154306543875
+          confluenceParentId: 154384302313
           atlassianUserName: ${{ secrets.ATLASSIAN_USERNAME }}
           atlassianApiToken: ${{ secrets.ATLASSIAN_API_TOKEN }}
           folderToPublish: text

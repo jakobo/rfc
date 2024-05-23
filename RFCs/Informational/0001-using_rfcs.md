@@ -46,7 +46,7 @@ If an RFC is not chosen for distribution, clear explanations will be provided by
 
 # Reference Implementation
 `0000-template.md` contains the minimum template needed for an effective RFC process. An RFC pull request document must meet the folowing criteria:
-* Adds to `text/` with a filename `0000-my_feature_name.md` where `my_feature_name` maps to the feature name in the header of the RFC
+* Adds to `RFCs/[Category]` with a filename `0000-my_feature_name.md` where `my_feature_name` maps to the feature name in the header of the RFC
 * The RFC pull request contains a single file change that is the `0000-my_feature_name.md` file
 * The RFC file contains the following sections: Summary, Motivation, Guide, Reference Implementation, Drawbacks, Alternatives
 

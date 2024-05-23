@@ -38,7 +38,7 @@ To avoid discussion going in circles forever, an owner in the domain related to 
 > **Open Question:** What is the decision process going to be for resolving an RFC? It could be a meeting or an up/down vote by N individuals in the company.
 
 ## Adoption
-When an RFC is chosen for distribution, it will be given a numeric ID corresponding with the next sequence in the `/RFCs` directory (This is why your file was `0000-my_feature_name` originally). While this does not guarantee the opinion is widely adopted, it does ensure that it has the support of the individuals accountable for the domain relevant to the RFC. Then, you can merge your changes to the master branch.
+When an RFC is chosen for distribution, it will be given a numeric ID corresponding with the next sequence in the `RFCs/[Category]` directory (This is why your file was `0000-my_feature_name` originally). While this does not guarantee the opinion is widely adopted, it does ensure that it has the support of the individuals accountable for the domain relevant to the RFC. After that your RFC is ready to be merged to the master branch.
 
 If an RFC is not chosen for distribution, clear explanations will be provided by the domain owner and the pull request closed. This does not prevent the implementation of the idea, but the decision on an RFC carries significant weight. Remember, RFCs exist to inform and share information and intent. Also, it should be included in WEX IT RFC Confluence Space under the archived session.
 

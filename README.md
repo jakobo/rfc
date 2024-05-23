@@ -15,19 +15,18 @@ RFCs are an effective way for an engineering organization to manage both histori
 2. These RFCs should always choose "timely" over "perfect"
 3. These are not authoritative ideas (what's authoritative is what's in the code)
 
-Since the inception of the RFC process modern tools (hi git!) have made it possible to build a rich RFC process with minimal effort. Github, Bitbucket, Gitlab, and other collaborative repositories all have code commenting and review tools, capable of capturing the discussion surrounding RFCs, and which RFCs are being strongly championed by the company.
+Since the inception of the RFC process modern tools (hi git!) have made it possible to build a rich RFC process with minimal effort. Github repositories all have code commenting and review tools, capable of capturing the discussion surrounding RFCs, and which RFCs are being strongly championed by the company.
 
 Many software changes, including bug fixes and documentation improvements can be implemented and reviewed via the normal git pull request workflow without ever touching this process. However, we do ask that bigger requests and ideas follow a bit of formality, especially when you are thinking about changes that impact other engineers elsewhere in the company. By creating an RFC, you're guaranteed that impacted folks have an adequate heads-up on the changes.
 
-Please refer to [RFC1](https://github.com/LeadSV/rfc/blob/master/text/0001-using_rfcs.md) "Using RFCs" for a detailed explanation of why RFCs are important and how to contribute your own RFC to this series.
+Please refer to [RFC1](https://github.com/tiagoferreiraWex/rfc/blob/tiagoferreiraWex-RFC0001/RFCs/Informational/0001-using_rfcs.md) "Using RFCs" for a detailed explanation of why RFCs are important and how to contribute your own RFC to this series.
 
 # The Process
-* Fork this repository so that you have a copy
-* Copy the template file: `cp 0000-template.md text/0000-my_feature.md`
-* `Are You an Open Source Project?` then don't forget to ask RFCs to contain a license (they'll often contain code, after all)
+* Branch this repository
+* Copy the template file: `cp RFCs/0000-template.md RFCs/[Category]/0000-my_feature.md` `[Category]` being the chosen category for your RFC
 * Fill in the RFC. Put thought into the sections, but remember that **timely is more important than perfect**
-* Submit a pull request. Be prepared to revise it as folks weigh in.
-* Help drive consensus on the RFC. Work to understand concerns.
+* Commit the changes to have your RFC created automatically to the [RFC Confluence Space](https://wexinc.atlassian.net/wiki/spaces/ITRFC/overview?homepageId=154384499250)
+* Help drive consensus on the RFC. Work to understand concerns. Don't forget to collect the feedback from meetings and post them as comments in the Confluence page for the RFC
 * Be willing to update the RFC as yours (and the company's) understanding evolves
 * Assist in wrapping up discussions when a final call for comments is made
 
@@ -44,9 +43,6 @@ A published RFC ensures that other teams are made aware of the document.
 Modifications to "active" RFCs can be done in follow-up pull requests. We strive to write each RFC that refers to architecture in a manner that it will reflect the final design; but the nature of the process means that we cannot expect every merged RFC to actually reflect what the end result will be at the time of release.
 
 In general, once published, RFCs should not be substantially changed. Only very minor changes should be submitted as amendments. More substantial changes should be new RFCs, with a link added to the original RFC.
-
-# Isn't <tool> Good Enough?
-If you have a great system that already helps you capture "why" and is good at democratizing ideas, you don't need this! If you're looking for something that has advantages over tools such as slack, wikis, and documents this may be a strong alternative.
 
 # Acknowledgments / License
 This work was inspired by the [Rust RFC Process](https://github.com/rust-lang/rfcs) and IETF [RFC3](https://tools.ietf.org/html/rfc3) "Documentation Conventions".

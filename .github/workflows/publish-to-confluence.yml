@@ -17,4 +17,4 @@ jobs:
           confluenceParentId: 154384302313
           atlassianUserName: ${{ secrets.ATLASSIAN_USERNAME }}
           atlassianApiToken: ${{ secrets.ATLASSIAN_API_TOKEN }}
-          folderToPublish: text
+          folderToPublish: RFCs

@@ -19,7 +19,7 @@ This solution proposes a documentation system that lives in code, uses plain tex
 To make sure you've hit on all major parts of an RFC, this RFC can serve as a reference model.
 
 ## Creating a new RFC
-Creating a new RFC should be something you start as soon as it feels like the work is substantial and worth getting additional opinions on. Before creating you RFC think about the category it would fit it better (Informational or Paved Roads). To start your RFC, branch this repository and copy the template file `RFCs\0000-template.md` to a new file in the `RFCs/` directory to the subfolder category you chose (informational for this example): `cp 0000-template.md RFCs/Informational/0000-my_feature_name.md`, replacing `my_feature_name` with a shortened name for your feature or proposal. You'll be given a simple markdown document, for which you can edit the sections and start your proposal. 
+Creating a new RFC should be something you start as soon as it feels like the work is substantial and worth getting additional opinions on. Before creating you RFC think about the category it would fit it better (Informational or Paved Roads). To start your RFC, branch this repository and copy the template file `RFCs\0000-template.md` to a new file in the `RFCs/[Category]` with `[Category]` being the category you chosen (informational for this example): `cp 0000-template.md RFCs/Informational/0000-my_feature_name.md`, replacing `my_feature_name` with a shortened name for your feature or proposal. You'll be given a simple markdown document, for which you can edit the sections and start your proposal. 
 
 ## Confluence integration
 This repo uses a github action workflow to automatically publish your RFC file to Confluence. Once you commit the changes to your local branch, a confluence page will be created with you RFC and the process could be started.
@@ -38,11 +38,9 @@ To avoid discussion going in circles forever, an owner in the domain related to 
 > **Open Question:** What is the decision process going to be for resolving an RFC? It could be a meeting or an up/down vote by N individuals in the company.
 
 ## Adoption
-When an RFC is chosen for distribution, it will be given a numeric ID corresponding with the next sequence in the `/RFCs` directory (This is why your file was `0000-my_feature_name` originally). While this does not guarantee the opinion is widely adopted, it does ensure that it has the support of the individuals accountable for the domain relevant to the RFC.
+When an RFC is chosen for distribution, it will be given a numeric ID corresponding with the next sequence in the `/RFCs` directory (This is why your file was `0000-my_feature_name` originally). While this does not guarantee the opinion is widely adopted, it does ensure that it has the support of the individuals accountable for the domain relevant to the RFC. Then, you can merge your changes to the master branch.
 
 If an RFC is not chosen for distribution, clear explanations will be provided by the domain owner and the pull request closed. This does not prevent the implementation of the idea, but the decision on an RFC carries significant weight. Remember, RFCs exist to inform and share information and intent. Also, it should be included in WEX IT RFC Confluence Space under the archived session.
-
-> **Open Question:** Should we give the numeric ID only when the RFC is chosen for distribution?
 
 # Reference Implementation
 `0000-template.md` contains the minimum template needed for an effective RFC process. An RFC pull request document must meet the folowing criteria:

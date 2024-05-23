@@ -7,7 +7,7 @@ PR: <blank>
 
 # TODO_TITLE
 
-*SEE `README.md` for how to submit a new RFC, and `0001-using_rfcs.md` for why we are using an RFC process. Delete this line when done.*
+*SEE [`README.md`](https://github.com/tiagoferreiraWex/rfc/blob/tiagoferreiraWex-RFC0001/README.md) for how to submit a new RFC, and [`0001-using_rfcs.md`](https://github.com/tiagoferreiraWex/rfc/blob/tiagoferreiraWex-RFC0001/RFCs/Informational/0001-using_rfcs.md) for why we are using an RFC process. Delete this line when done.*
 
 # Summary
 This is a one paragraph explanation of the issue and the proposal.

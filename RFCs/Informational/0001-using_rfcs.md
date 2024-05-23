@@ -42,6 +42,8 @@ When an RFC is chosen for distribution, it will be given a numeric ID correspond
 
 If an RFC is not chosen for distribution, clear explanations will be provided by the domain owner and the pull request closed. This does not prevent the implementation of the idea, but the decision on an RFC carries significant weight. Remember, RFCs exist to inform and share information and intent. Also, it should be included in WEX IT RFC Confluence Space under the archived session.
 
+> **Open Question:** Should we give the numeric ID only when the RFC is chosen for distribution?
+
 # Reference Implementation
 `0000-template.md` contains the minimum template needed for an effective RFC process. An RFC pull request document must meet the folowing criteria:
 * Adds to `text/` with a filename `0000-my_feature_name.md` where `my_feature_name` maps to the feature name in the header of the RFC
@@ -64,7 +66,7 @@ RFCs are a better solution than forming an Architecture Council. The move to cre
 RFCs are a more comprehensive solution than [Architecture Decision Records (ADRs)](https://www.thoughtworks.com/radar/techniques/lightweight-architecture-decision-records) and [whydocs](https://web.archive.org/web/20161119073912/https://medium.com/@jakob/a-better-framework-for-status-5c3dde887aa5). While ADRs and whydocs can effectively capture decisions being made during the development phase of software, they fail to capture ideas and intent. Why we **don't** do things is equally important to why we **do**, necessitating a more complete process.
 
 ## Documentation Systems
-RFCs are superior to wikis. While wikis often have better search facilities, wiki pages do not easily foster the discussion needed around major engineering topics. Wikis lie outside of an engineer's normal workflow and tools, making them less visible to the engineering organization. RFCs are a naturally better fit for the engineering workflow, leveraging GitHub/GitLab/BitBucket/etc and their native review and discussion tools.
+RFCs are superior to wikis. While wikis often have better search facilities, wiki pages do not easily foster the discussion needed around major engineering topics. Wikis lie outside of an engineer's normal workflow and tools, making them less visible to the engineering organization. RFCs are a naturally better fit for the engineering workflow, leveraging GitHub and their native review and discussion tools.
 
 RFCs are a better alternative than document cloud options. While document clouds have better discussion tools than wikis, the ability to locate documents is restricted to the search facilities and sharing permissions available in the document cloud. For example, items shared with a limited subset of engineers are unlikely to receive holistic review. Further, when the document author leaves the company, the decisions risk being lost unless the owner is migrated. RFCs avoid this by living as code in a git repository, owned by the engineering organization as a whole.
 

@@ -2,7 +2,8 @@
 RFC: 1
 Title: Using RFCs
 Start: 5/15/2024
-PR: 0
+Status: In Progress
+Ratified by: 
 ---
 
 # Using RFCs
